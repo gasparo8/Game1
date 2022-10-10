@@ -81,6 +81,7 @@ public class Player : MonoBehaviour
         {
             isGrounded = false;
             myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            anim.SetBool("IsJumping", true);
         }
     }
 
@@ -89,6 +90,7 @@ public class Player : MonoBehaviour
         if(collision.gameObject.CompareTag(GROUND_TAG))
         {
             isGrounded = true;
+            anim.SetBool("IsJumping", false);
         }
     }
 
