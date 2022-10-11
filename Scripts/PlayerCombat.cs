@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
-{ 
+{
+
+    public Animator animator;
+
     // Update is called once per frame
     void Update()
     {
@@ -16,6 +19,8 @@ public class PlayerCombat : MonoBehaviour
     void Attack()
     {
         // Play an attack animation
+        animator.SetTrigger("Attack");
+
         // Detect enemies in range of attack
         // Damage enemies
     }

@@ -1414,6 +1414,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!95 &1492250310 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4433244998398290613, guid: edb9ada77c68a4f6cb4b6cc128488860, type: 3}
+  m_PrefabInstance: {fileID: 4433244997609102796}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1522538704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,6 +1752,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2104142153, guid: edb9ada77c68a4f6cb4b6cc128488860, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1492250310}
     - target: {fileID: 4433244998398290609, guid: edb9ada77c68a4f6cb4b6cc128488860, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1789,6 +1798,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4433244998398290609, guid: edb9ada77c68a4f6cb4b6cc128488860, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433244998398290613, guid: edb9ada77c68a4f6cb4b6cc128488860, type: 3}
+      propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4433244998398290619, guid: edb9ada77c68a4f6cb4b6cc128488860, type: 3}
