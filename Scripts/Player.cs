@@ -24,6 +24,9 @@ public class Player : MonoBehaviour
     private bool isGrounded;
     private string GROUND_TAG = "Ground";
 
+    public float leftBound = -9.85f;
+    public float rightBound = 13.8f;
+
     private void Awake()
     {
 
@@ -35,7 +38,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -46,8 +49,21 @@ public class Player : MonoBehaviour
         PlayerJump();
     }
 
-    void PlayerMoveKeyboard() {
+    void PlayerMoveKeyboard()
+    {
 
+        // Keeps player inbounds
+        if (transform.position.x < leftBound)
+        {
+            transform.position = new Vector3(leftBound, transform.position.y, transform.position.z);
+        }
+
+        if (transform.position.x > rightBound)
+        {
+            transform.position = new Vector3(rightBound, transform.position.y, transform.position.z);
+        }
+
+        //allows player to walk
         movementX = Input.GetAxisRaw("Horizontal");
 
         transform.position += new Vector3(movementX, 0f, 0f) * Time.deltaTime * moveForce;
