@@ -21,7 +21,7 @@ public class Ghost : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        //applying spped to x and leaving the y alone by keeping it at myBody.velocity.y
+        //applying speed to x and leaving the y alone by keeping it at myBody.velocity.y
         myBody.velocity = new Vector2(speed, myBody.velocity.y);
     }
 
