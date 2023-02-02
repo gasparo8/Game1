@@ -108,18 +108,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4
-        y: 49
+        y: 48
         width: 3
         height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.31, y: 0.43}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 171fc8bbf56b14a4c8e363be77d1eb36
-      internalID: -1901855607
+      spriteID: 9959a492e840d47fa9c0cc9fd95b2a69
+      internalID: -1145219508
       vertices: []
       indices: 
       edges: []
@@ -128,19 +128,19 @@ TextureImporter:
       name: Character 2 Hit and Death Sheet_1
       rect:
         serializedVersion: 2
-        x: 9
-        y: 49
+        x: 16
+        y: 48
         width: 3
         height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.42}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f200a30e1474a49b68b727edde08e406
-      internalID: 180921441
+      spriteID: 5316a8121d1df4e0a968981db31a8e41
+      internalID: 1906683785
       vertices: []
       indices: 
       edges: []
@@ -149,19 +149,19 @@ TextureImporter:
       name: Character 2 Hit and Death Sheet_2
       rect:
         serializedVersion: 2
-        x: 13
-        y: 49
-        width: 5
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 30
+        width: 13
+        height: 12
+      alignment: 9
+      pivot: {x: 0.092, y: 0.568}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eded8384f6e2e4cfc9328dfeaf144b29
-      internalID: -1131747313
+      spriteID: 6221a56fe4e6e4d3baf2a0d6ed423c19
+      internalID: 716164177
       vertices: []
       indices: 
       edges: []
@@ -170,19 +170,19 @@ TextureImporter:
       name: Character 2 Hit and Death Sheet_3
       rect:
         serializedVersion: 2
-        x: 19
-        y: 49
+        x: 28
+        y: 48
         width: 5
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 12
+      alignment: 9
+      pivot: {x: 0.10092697, y: 0.42}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00a2f65185de6401388a634c3701af67
-      internalID: 1188748364
+      spriteID: b93e586e79cbd4a29ba69f8bb4c5ef27
+      internalID: -1280974954
       vertices: []
       indices: 
       edges: []
@@ -191,19 +191,19 @@ TextureImporter:
       name: Character 2 Hit and Death Sheet_4
       rect:
         serializedVersion: 2
-        x: 26
+        x: 44
         y: 48
-        width: 12
-        height: 3
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.09092484, y: 0.41999975}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e1c718e86f8f46248d532fc50d77e29
-      internalID: 724958462
+      spriteID: 8e5be361b8a3443f098b546c634ea9e6
+      internalID: -1212999235
       vertices: []
       indices: 
       edges: []
@@ -212,19 +212,19 @@ TextureImporter:
       name: Character 2 Hit and Death Sheet_5
       rect:
         serializedVersion: 2
-        x: 40
-        y: 48
-        width: 12
-        height: 3
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 32
+        y: 30
+        width: 13
+        height: 12
+      alignment: 9
+      pivot: {x: 0.092, y: 0.568}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 976714a0810914f3793e1f320ea18784
-      internalID: -2071790634
+      spriteID: d8e643969b6cd4132a3c6921d4f3c64e
+      internalID: -246546809
       vertices: []
       indices: 
       edges: []
@@ -233,19 +233,19 @@ TextureImporter:
       name: Character 2 Hit and Death Sheet_6
       rect:
         serializedVersion: 2
-        x: 4
-        y: 44
-        width: 13
-        height: 3
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 16
+        y: 30
+        width: 12
+        height: 12
+      alignment: 9
+      pivot: {x: 0.092, y: 0.568}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 299ac07e94b3f43e4b5e5af68618f5d8
-      internalID: -20610369
+      spriteID: df7a1a308c5e74d8bad9c0376edb4600
+      internalID: -802877416
       vertices: []
       indices: 
       edges: []
@@ -254,19 +254,19 @@ TextureImporter:
       name: Character 2 Hit and Death Sheet_7
       rect:
         serializedVersion: 2
-        x: 20
-        y: 43
-        width: 13
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1
+        y: 30
+        width: 12
+        height: 12
+      alignment: 9
+      pivot: {x: 0.092, y: 0.568}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 806dd0637734d45c9b0270715558eca7
-      internalID: -220779017
+      spriteID: 187b0ae4d9112416e9151ce6cd6f53af
+      internalID: 63549866
       vertices: []
       indices: 
       edges: []
@@ -282,14 +282,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Character 2 Hit and Death Sheet_2: -1131747313
-      Character 2 Hit and Death Sheet_5: -2071790634
-      Character 2 Hit and Death Sheet_1: 180921441
-      Character 2 Hit and Death Sheet_4: 724958462
-      Character 2 Hit and Death Sheet_7: -220779017
-      Character 2 Hit and Death Sheet_6: -20610369
-      Character 2 Hit and Death Sheet_0: -1901855607
-      Character 2 Hit and Death Sheet_3: 1188748364
+      Character 2 Hit and Death Sheet_2: 716164177
+      Character 2 Hit and Death Sheet_5: -246546809
+      Character 2 Hit and Death Sheet_1: 1906683785
+      Character 2 Hit and Death Sheet_4: -1212999235
+      Character 2 Hit and Death Sheet_7: 63549866
+      Character 2 Hit and Death Sheet_6: -802877416
+      Character 2 Hit and Death Sheet_0: -1145219508
+      Character 2 Hit and Death Sheet_3: -1280974954
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
