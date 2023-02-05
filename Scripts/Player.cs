@@ -27,6 +27,9 @@ public class Player : MonoBehaviour
     public float leftBound = -9.85f;
     public float rightBound = 13.8f;
 
+    public int maxHealth = 100;
+    int currentHealth;
+
     private void Awake()
     {
 
@@ -38,7 +41,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -91,7 +94,7 @@ public class Player : MonoBehaviour
 
     }
 
-    void PlayerJump ()
+    void PlayerJump()
     {
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
@@ -103,11 +106,37 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag(GROUND_TAG))
+        if (collision.gameObject.CompareTag(GROUND_TAG))
         {
             isGrounded = true;
             anim.SetBool("IsJumping", false);
         }
     }
 
-} //class
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        anim.SetTrigger("isHit");
+
+        if(currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Debug.Log("Player Died");
+        anim.SetBool("isDead", true);
+
+        //disable player
+        GetComponent<Collider2D>().enabled = false;
+        this.enabled = false;
+
+        //added below to stop player from falling
+        myBody.gravityScale = 0;
+        myBody.constraints = RigidbodyConstraints2D.FreezePositionX;
+    }
+}
+         
+//class
