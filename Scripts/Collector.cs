@@ -12,7 +12,5 @@ public class Collector : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
-
-
 }
 

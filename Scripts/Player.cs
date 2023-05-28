@@ -28,7 +28,8 @@ public class Player : MonoBehaviour
     public float rightBound = 13.8f;
 
     public int maxHealth = 100;
-    int currentHealth;
+
+    public int currentHealth;
 
     private void Awake()
     {
@@ -111,6 +112,7 @@ public class Player : MonoBehaviour
             isGrounded = true;
             anim.SetBool("IsJumping", false);
         }
+
     }
 
     public void TakeDamage(int damage)
@@ -118,7 +120,7 @@ public class Player : MonoBehaviour
         currentHealth -= damage;
         anim.SetTrigger("isHit");
 
-        if(currentHealth <= 0)
+        if (currentHealth <= 0)
         {
             Die();
         }
@@ -129,7 +131,11 @@ public class Player : MonoBehaviour
         Debug.Log("Player Died");
         anim.SetBool("isDead", true);
 
-        //disable player
+        DisablePlayer();
+    }
+
+    void DisablePlayer()
+    {
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
 
@@ -138,5 +144,4 @@ public class Player : MonoBehaviour
         myBody.constraints = RigidbodyConstraints2D.FreezePositionX;
     }
 }
-         
-//class
+      

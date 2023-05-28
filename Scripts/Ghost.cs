@@ -14,17 +14,14 @@ public class Ghost : MonoBehaviour
     void Start()
     {
         myBody = GetComponent<Rigidbody2D>();
-
-        speed = -2;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        speed = -2;
+
         //applying speed to x and leaving the y alone by keeping it at myBody.velocity.y
         myBody.velocity = new Vector2(speed, myBody.velocity.y);
     }
-
-
-
-}//class
+}

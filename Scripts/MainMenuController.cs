@@ -10,12 +10,4 @@ public void PlayGame()
     {
         SceneManager.LoadScene("Game1Level1");
     }
-
-
-
-
-
-
-
-
-}//class
+}
