@@ -128,10 +128,9 @@ public class Player : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("Player Died");
-        anim.SetBool("isDead", true);
-
-        DisablePlayer();
+            Debug.Log("Player Died");
+            anim.SetBool("isDead", true);
+            DisablePlayer();        
     }
 
     void DisablePlayer()
