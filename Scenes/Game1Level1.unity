@@ -807,7 +807,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.48, y: 0.8, z: -10.01}
+  m_LocalPosition: {x: 4.78, y: 0.8, z: -10.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -827,7 +827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minX: -2.75
-  maxX: 5.5
+  maxX: 4.78
 --- !u!1 &555728438 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9130903019608110931, guid: daf09f6ee10814c6b9db451452fe21f2, type: 3}
