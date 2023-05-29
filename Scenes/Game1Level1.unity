@@ -846,7 +846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1287630975}
-  damage: 30
+  damage: 35
 --- !u!1 &597215149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1928,7 +1928,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 9130903019608110929, guid: daf09f6ee10814c6b9db451452fe21f2, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9130903019608110931, guid: daf09f6ee10814c6b9db451452fe21f2, type: 3}
       propertyPath: m_Name
