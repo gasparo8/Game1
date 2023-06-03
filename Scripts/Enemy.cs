@@ -10,14 +10,44 @@ public class Enemy : MonoBehaviour
     int currentHealth;
     private Rigidbody2D rb;
 
+    /*
+    private bool hasTarget;
+    private string HAS_TARGET = "hasTarget";
+    */
+
+    public DetectionZone attackZone;
+
+    public bool _hasTarget = false;
+
+
+    public bool HasTarget
+    {
+        get { return _hasTarget; }
+        private set
+        {
+            _hasTarget = value;
+            animator.SetBool("hasTarget", value);
+        }
+    }
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
-
-        //added below to stop skeleton animation from falling
-        rb = GetComponent<Rigidbody2D>();
     }
+
+    
+    void Update()
+    {
+        HasTarget = attackZone.detectedColliders.Count > 0;      
+    }
+    
 
     public void TakeDamage(int damage)
     {
