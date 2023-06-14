@@ -6,8 +6,6 @@ public class Ghost : MonoBehaviour
 {
     [HideInInspector]
     public float speed;
-
-
     private Rigidbody2D myBody;
 
     // Start is called before the first frame update

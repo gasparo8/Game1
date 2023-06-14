@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float jumpForce = 11f;
 
-    private float movementX;
+    public float movementX;
 
     [SerializeField]
     private Rigidbody2D myBody;
@@ -79,20 +79,20 @@ public class Player : MonoBehaviour
         if (movementX > 0)
         {
             anim.SetBool(WALK_ANIMATION, true);
-            sr.flipX = false;
+            transform.rotation = Quaternion.Euler(0f, 0f, 0f);
         }
+
         else if (movementX < 0)
         {
             //walking left
             anim.SetBool(WALK_ANIMATION, true);
-            sr.flipX = true;
+            transform.rotation = Quaternion.Euler(0f, 180f, 0f);
         }
+
         else
         {
             anim.SetBool(WALK_ANIMATION, false);
-
         }
-
     }
 
     void PlayerJump()
@@ -112,7 +112,6 @@ public class Player : MonoBehaviour
             isGrounded = true;
             anim.SetBool("IsJumping", false);
         }
-
     }
 
     public void TakeDamage(int damage)

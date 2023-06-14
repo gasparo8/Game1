@@ -5,7 +5,7 @@ using UnityEngine;
 public class DetectionZone : MonoBehaviour
 {
     public List<Collider2D> detectedColliders = new List<Collider2D>();
-    Collider2D col; 
+    Collider2D col;
 
     private void Awake()
     {
@@ -21,4 +21,5 @@ public class DetectionZone : MonoBehaviour
     {
         detectedColliders.Remove(collision);
     }
+
 }

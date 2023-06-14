@@ -19,7 +19,6 @@ public class Enemy : MonoBehaviour
 
     public bool _hasTarget = false;
 
-
     public bool HasTarget
     {
         get { return _hasTarget; }
@@ -30,11 +29,13 @@ public class Enemy : MonoBehaviour
         }
     }
 
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
+
 
     // Start is called before the first frame update
     void Start()
@@ -42,7 +43,7 @@ public class Enemy : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    
+
     void Update()
     {
         HasTarget = attackZone.detectedColliders.Count > 0;      
@@ -60,6 +61,7 @@ public class Enemy : MonoBehaviour
             Die();
         }
     }
+
 
     void Die()
     {

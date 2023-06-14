@@ -17,7 +17,6 @@ public class CameraFollow : MonoBehaviour
     {
         //FindWithTag is function within GameObject that will locate Player (because tag). .transform gets transform propoerty from player.
         player = GameObject.FindWithTag("Player").transform;
-
     }
 
     // Update is called once per frame. LateUpdate is called after all update calculations are finished (i.e. player movement).
