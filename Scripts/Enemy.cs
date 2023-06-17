@@ -10,12 +10,10 @@ public class Enemy : MonoBehaviour
     int currentHealth;
     private Rigidbody2D rb;
 
-    /*
-    private bool hasTarget;
-    private string HAS_TARGET = "hasTarget";
-    */
-
     public DetectionZone attackZone;
+
+    private Player player;
+    private Vector2 playerPosition;
 
     public bool _hasTarget = false;
 
@@ -24,11 +22,22 @@ public class Enemy : MonoBehaviour
         get { return _hasTarget; }
         private set
         {
+           
+            if (player != null && playerPosition.x > this.transform.position.x)
+            {
+                this.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+            }
+
+            else if (player != null && playerPosition.x < this.transform.position.x)
+            {
+                this.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+            }
+            
             _hasTarget = value;
             animator.SetBool("hasTarget", value);
         }
     }
-
+    
 
     private void Awake()
     {
@@ -41,6 +50,19 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+
+        // Initialize the player variable.
+        if (GameObject.FindWithTag("Player") != null)
+        {
+            player = GameObject.FindWithTag("Player").GetComponent<Player>();
+        }
+    }
+
+
+    // Initialize the playerPosition variable.
+    private void FixedUpdate()
+    {
+        playerPosition = player.transform.position;
     }
 
 
