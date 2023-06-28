@@ -1,48 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-/*
-public class DetectionZone : MonoBehaviour
-{
-    public List<Collider2D> detectedColliders = new List<Collider2D>();
-    Collider2D col;
-    Player player;
-    public int takeDamage = 35;
- 
-    private void Awake()
-    {
-        col = GetComponent<Collider2D>();
-        player = GameObject.FindWithTag("Player").GetComponent<Player>();   
-    }
 
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        detectedColliders.Add(collision);
-
-        // Start a timer to check if the player is still in the list after 1 second.
-        StartCoroutine(CheckPlayerInList());
-    }
-
-    
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        detectedColliders.Remove(collision);
-    }
-
-    
-    private IEnumerator CheckPlayerInList()
-    {
-        yield return new WaitForSeconds(1);
-
-        // If the player is still in the list, damage them.
-        if (detectedColliders.Contains(player.GetComponent<Collider2D>()))
-        {
-            player.TakeDamage(takeDamage);
-        }
-    }
-}
-*/
 public class DetectionZone : MonoBehaviour
 {
     public List<Collider2D> detectedColliders = new List<Collider2D>();
@@ -50,12 +9,17 @@ public class DetectionZone : MonoBehaviour
     Player player;
     public int takeDamage = 35;
     private bool playerInZone = false;
+    private bool damageApplied = false;
+    public float initialDelay = 0.5f;
+    public float damageDelay = 0.01f;
+
 
     private void Awake()
     {
         col = GetComponent<Collider2D>();
         player = GameObject.FindWithTag("Player").GetComponent<Player>();
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -70,6 +34,7 @@ public class DetectionZone : MonoBehaviour
             }
         }
     }
+
 
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -89,11 +54,18 @@ public class DetectionZone : MonoBehaviour
     {
         while (playerInZone)
         {
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(initialDelay);
 
             if (detectedColliders.Contains(player.GetComponent<Collider2D>()))
             {
-                player.TakeDamage(takeDamage);
+                damageApplied = false;
+                yield return new WaitForSeconds(damageDelay);
+
+                if (playerInZone && detectedColliders.Contains(player.GetComponent<Collider2D>()) && !damageApplied)
+                {
+                    player.TakeDamage(takeDamage);
+                    damageApplied = true;
+                }
             }
         }
     }
