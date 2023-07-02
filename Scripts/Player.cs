@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    private PlayerCombat playerCombat;
+
     [SerializeField]
     private float moveForce = 4f;
 
@@ -31,19 +33,23 @@ public class Player : MonoBehaviour
 
     public int currentHealth;
 
+
     private void Awake()
     {
 
         myBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+        playerCombat = GetComponent<PlayerCombat>();
     }
+
 
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
     }
+
 
     // Update is called once per frame
     void Update()
@@ -53,9 +59,9 @@ public class Player : MonoBehaviour
         PlayerJump();
     }
 
+
     void PlayerMoveKeyboard()
     {
-
         // Keeps player inbounds
         if (transform.position.x < leftBound)
         {
@@ -72,6 +78,7 @@ public class Player : MonoBehaviour
 
         transform.position += new Vector3(movementX, 0f, 0f) * Time.deltaTime * moveForce;
     }
+
 
     void AnimatePlayer()
     {
@@ -95,6 +102,7 @@ public class Player : MonoBehaviour
         }
     }
 
+
     void PlayerJump()
     {
         if (Input.GetButtonDown("Jump") && isGrounded)
@@ -105,6 +113,7 @@ public class Player : MonoBehaviour
         }
     }
 
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag(GROUND_TAG))
@@ -113,6 +122,7 @@ public class Player : MonoBehaviour
             anim.SetBool("IsJumping", false);
         }
     }
+
 
     public void TakeDamage(int damage)
     {
@@ -125,19 +135,45 @@ public class Player : MonoBehaviour
         }
     }
 
+
     void Die()
     {
+        Debug.Log("Player Died");
+
+        if (!isGrounded)
         {
-            Debug.Log("Player Died");
-            anim.SetBool("isDead", true);
-            DisablePlayer();
+            StartCoroutine(WaitForGroundAndDie());
+        }
+        else
+        {
+            PlayDeathAnimation();
         }
     }
+
+    IEnumerator WaitForGroundAndDie()
+    {
+        while (!isGrounded)
+        {
+            yield return null;
+        }
+
+        PlayDeathAnimation();
+    }
+
+    void PlayDeathAnimation()
+    {
+        anim.SetBool("isDead", true);
+        DisablePlayer();
+    }
+
 
     void DisablePlayer()
     {
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
+
+        //disable PlayerCombat script
+        playerCombat.enabled = false;
 
         //added below to stop player from falling
         myBody.gravityScale = 0;

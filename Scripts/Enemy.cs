@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
     private Vector2 playerPosition;
 
     public bool _hasTarget = false;
+    public bool enemyIsDead = false;
 
     public bool HasTarget
     {
@@ -88,6 +89,9 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         Debug.Log("Enemy Died");
+
+        //Set enemyIsDead to true
+        enemyIsDead = true;
 
         //Die Animation
         animator.SetBool("isDead", true);

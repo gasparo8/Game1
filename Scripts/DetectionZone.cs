@@ -7,6 +7,7 @@ public class DetectionZone : MonoBehaviour
     public List<Collider2D> detectedColliders = new List<Collider2D>();
     Collider2D col;
     Player player;
+    Enemy enemy;
     public int takeDamage = 35;
     private bool playerInZone = false;
     private bool damageApplied = false;
@@ -50,6 +51,7 @@ public class DetectionZone : MonoBehaviour
         }
     }
 
+    
     private IEnumerator DamagePlayerRepeatedly()
     {
         while (playerInZone)
