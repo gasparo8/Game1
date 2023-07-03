@@ -44,6 +44,7 @@ public class Enemy : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        attackZone = GetComponentInChildren<DetectionZone>();
     }
 
 

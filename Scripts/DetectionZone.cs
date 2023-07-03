@@ -7,7 +7,7 @@ public class DetectionZone : MonoBehaviour
     public List<Collider2D> detectedColliders = new List<Collider2D>();
     Collider2D col;
     Player player;
-    Enemy enemy;
+    private Enemy enemy;
     public int takeDamage = 35;
     private bool playerInZone = false;
     private bool damageApplied = false;
@@ -19,6 +19,7 @@ public class DetectionZone : MonoBehaviour
     {
         col = GetComponent<Collider2D>();
         player = GameObject.FindWithTag("Player").GetComponent<Player>();
+        enemy = GetComponentInParent<Enemy>();
     }
 
 
@@ -51,14 +52,14 @@ public class DetectionZone : MonoBehaviour
         }
     }
 
-    
+
     private IEnumerator DamagePlayerRepeatedly()
     {
         while (playerInZone)
         {
             yield return new WaitForSeconds(initialDelay);
 
-            if (detectedColliders.Contains(player.GetComponent<Collider2D>()))
+            if (detectedColliders.Contains(player.GetComponent<Collider2D>()) && !enemy.enemyIsDead)
             {
                 damageApplied = false;
                 yield return new WaitForSeconds(damageDelay);
