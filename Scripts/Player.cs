@@ -16,13 +16,10 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     private Rigidbody2D myBody;
-
     private SpriteRenderer sr;
-
     private Animator anim;
 
     private string WALK_ANIMATION = "Walk";
-
     private bool isGrounded;
     private string GROUND_TAG = "Ground";
 
@@ -30,13 +27,14 @@ public class Player : MonoBehaviour
     public float rightBound = 13.8f;
 
     public int maxHealth = 100;
-
     public int currentHealth;
+
+    private Vector3 respawnPoint;
+    public GameObject fallDetector;
 
 
     private void Awake()
     {
-
         myBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
@@ -48,6 +46,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+        respawnPoint = transform.position;
     }
 
 
@@ -58,6 +57,7 @@ public class Player : MonoBehaviour
         AnimatePlayer();
         PlayerJump();
     }
+
 
 
     void PlayerMoveKeyboard()
@@ -120,6 +120,15 @@ public class Player : MonoBehaviour
         {
             isGrounded = true;
             anim.SetBool("IsJumping", false);
+        }
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Fall Detector")
+        {
+            transform.position = respawnPoint;
         }
     }
 

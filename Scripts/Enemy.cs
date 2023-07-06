@@ -19,6 +19,8 @@ public class Enemy : MonoBehaviour
     public bool enemyIsDead = false;
 
     public bool HasTarget
+
+    //Controls the rotation of the skeleton based on the position of the player.
     {
         get { return _hasTarget; }
         private set
