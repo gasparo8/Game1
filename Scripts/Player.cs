@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -130,6 +131,18 @@ public class Player : MonoBehaviour
         {
             transform.position = respawnPoint;
         }
+
+        else if (collision.tag == "Next Level")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            respawnPoint = transform.position;
+        }
+
+        else if (collision.tag == "Previous Level")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            respawnPoint = transform.position;
+        } 
     }
 
 
