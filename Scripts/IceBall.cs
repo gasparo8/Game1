@@ -12,8 +12,9 @@ public class IceBall : MonoBehaviour
     void Start()
     {
         iceBall = GetComponent<Rigidbody2D>();
-        speed = -2;
+        speed = -2f;
     }
+
 
     // Update is called once per frame
     void FixedUpdate()
