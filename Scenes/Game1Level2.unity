@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: effbc9aedf18443ea94af4048fa6aa91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iceBallPrefab: {fileID: 2216119897472259916, guid: 226e8fd697c1b4110b366b0af9bbda6f, type: 3}
+  iceBallPrefab: {fileID: 7683165706457252786, guid: 226e8fd697c1b4110b366b0af9bbda6f, type: 3}
   iceBallLifetime: 10
 --- !u!61 &212548578
 BoxCollider2D:
@@ -475,7 +475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: effbc9aedf18443ea94af4048fa6aa91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iceBallPrefab: {fileID: 2216119897472259916, guid: 226e8fd697c1b4110b366b0af9bbda6f, type: 3}
+  iceBallPrefab: {fileID: 7683165706457252786, guid: 226e8fd697c1b4110b366b0af9bbda6f, type: 3}
   iceBallLifetime: 10
 --- !u!1 &307513228
 GameObject:
@@ -632,7 +632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: effbc9aedf18443ea94af4048fa6aa91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iceBallPrefab: {fileID: 2216119897472259916, guid: 226e8fd697c1b4110b366b0af9bbda6f, type: 3}
+  iceBallPrefab: {fileID: 7683165706457252786, guid: 226e8fd697c1b4110b366b0af9bbda6f, type: 3}
   iceBallLifetime: 10
 --- !u!1 &403965106
 GameObject:
@@ -1790,6 +1790,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab74fa79e4b3d432192f368e49135433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1287630978 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4433244998398290613, guid: edb9ada77c68a4f6cb4b6cc128488860, type: 3}
+  m_PrefabInstance: {fileID: 4433244997609102796}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1329024601
 GameObject:
   m_ObjectHideFlags: 0
@@ -2521,6 +2526,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4433244998398290612, guid: edb9ada77c68a4f6cb4b6cc128488860, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1287630978}
     - target: {fileID: 4433244998398290612, guid: edb9ada77c68a4f6cb4b6cc128488860, type: 3}
       propertyPath: rightBound
       value: 13.8
