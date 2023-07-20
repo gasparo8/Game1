@@ -134,18 +134,20 @@ public class Player : MonoBehaviour
 
         else if (collision.tag == "Next Level")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            respawnPoint = transform.position;
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                respawnPoint = transform.position;
+            }
         }
 
         else if (collision.tag == "Previous Level")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
             respawnPoint = transform.position;
-        } 
+        }
     }
 
-
+     
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
