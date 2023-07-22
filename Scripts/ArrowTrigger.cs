@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IceBallTrigger : MonoBehaviour
+public class ArrowTrigger : MonoBehaviour
 {
-    public GameObject iceBallPrefab;
-    public float iceBallLifetime = 10f;
+    public GameObject arrowPrefab;
+    public float arrowLifetime = 5f;
 
     // Store the instantiation positions for each trigger
     public List<Vector2> instantiationPoints = new List<Vector2>();
@@ -17,18 +17,17 @@ public class IceBallTrigger : MonoBehaviour
             // Instantiate an arrow for each position in instantiationPoints list
             foreach (Vector2 position in instantiationPoints)
             {
-                GameObject iceBall = Instantiate(iceBallPrefab, position, Quaternion.identity);
-                StartCoroutine(DestroyIceBall(iceBall));
+                GameObject arrow = Instantiate(arrowPrefab, position, Quaternion.identity);
+                StartCoroutine(DestroyIceBall(arrow));
             }
         }
     }
-
-        private IEnumerator DestroyIceBall(GameObject iceBall)
+        private IEnumerator DestroyIceBall(GameObject arrow)
         {
-            yield return new WaitForSeconds(iceBallLifetime);
-            if (iceBall != null)
+            yield return new WaitForSeconds(arrowLifetime);
+            if (arrow != null)
             {
-                Destroy(iceBall);
+                Destroy(arrow);
             }
         }
     }

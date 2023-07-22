@@ -303,6 +303,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iceBallPrefab: {fileID: 7683165706457252786, guid: 226e8fd697c1b4110b366b0af9bbda6f, type: 3}
   iceBallLifetime: 10
+  instantiationPoints:
+  - {x: 1.49, y: 2.85}
 --- !u!61 &212548578
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -477,6 +479,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iceBallPrefab: {fileID: 7683165706457252786, guid: 226e8fd697c1b4110b366b0af9bbda6f, type: 3}
   iceBallLifetime: 10
+  instantiationPoints:
+  - {x: 1.49, y: 2.85}
 --- !u!1 &307513228
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,6 +638,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iceBallPrefab: {fileID: 7683165706457252786, guid: 226e8fd697c1b4110b366b0af9bbda6f, type: 3}
   iceBallLifetime: 10
+  instantiationPoints:
+  - {x: 1.49, y: 2.85}
 --- !u!1 &403965106
 GameObject:
   m_ObjectHideFlags: 0
