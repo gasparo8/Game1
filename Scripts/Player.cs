@@ -142,7 +142,7 @@ public class Player : MonoBehaviour
 
         else if (collision.tag == "Next Level")
         {
-            if (IsEnemyDead())
+            if (enemy == null || IsEnemyDead())
             {
                 // If the enemy is dead, advance to the next level
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
