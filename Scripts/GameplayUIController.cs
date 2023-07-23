@@ -13,6 +13,6 @@ public class GameplayUIController : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene("Game1Level1");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
