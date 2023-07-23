@@ -33,6 +33,7 @@ public class Player : MonoBehaviour
     private Vector3 respawnPoint;
     public GameObject fallDetector;
 
+    public Enemy enemy;
 
     private void Awake()
     {
@@ -125,6 +126,12 @@ public class Player : MonoBehaviour
     }
 
 
+    private bool IsEnemyDead()
+    {
+        return enemy != null && enemy.enemyIsDead;
+    }
+
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Fall Detector")
@@ -132,13 +139,30 @@ public class Player : MonoBehaviour
             transform.position = respawnPoint;
         }
 
+
         else if (collision.tag == "Next Level")
         {
+            if (IsEnemyDead())
             {
+                // If the enemy is dead, advance to the next level
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 respawnPoint = transform.position;
             }
+
+            else
+            {
+                Debug.Log("Enemy still alive!");
+                return;
+
+            }
         }
+
+        /*
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            respawnPoint = transform.position;
+        }
+        }*/
 
         else if (collision.tag == "Previous Level")
         {
