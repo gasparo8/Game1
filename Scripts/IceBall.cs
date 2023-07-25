@@ -37,7 +37,7 @@ public class IceBall : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (player != null && collision.gameObject.CompareTag("Player"))
         {
             player.TakeDamage(damage);
             Debug.Log("Player took DAMAGE");
