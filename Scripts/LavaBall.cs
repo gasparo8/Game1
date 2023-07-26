@@ -27,9 +27,10 @@ public class LavaBall : MonoBehaviour
     }
 
     
-    private void FixedUpdate()
-    {
+  private void FixedUpdate()
 
+   /* void lavaball()*/
+    {
         if (goingUp)
         {
             // Move the lava ball up using physics forces

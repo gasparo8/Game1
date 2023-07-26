@@ -5,7 +5,7 @@ using UnityEngine;
 public class IceBallTrigger : MonoBehaviour
 {
     public GameObject iceBallPrefab;
-    public float iceBallLifetime = 10f;
+    public float iceBallLifetime = 15f;
 
     // Store the instantiation positions for each trigger
     public List<Vector2> instantiationPoints = new List<Vector2>();
