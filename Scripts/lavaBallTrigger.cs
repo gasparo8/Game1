@@ -5,33 +5,29 @@ using UnityEngine;
 public class lavaBallTrigger : MonoBehaviour
 {
     public GameObject lavaBallPrefab;
-    public float lavaBallLifetime = 5f;
+    private bool lavaBallInstantiated = false; // Flag to track if a lava ball has been instantiated
 
     // Store the instantiation positions for each trigger
     public List<Vector2> instantiationPoints = new List<Vector2>();
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (!lavaBallInstantiated && collision.CompareTag("Player"))
         {
-            // Instantiate an lavaBall for each position in instantiationPoints list
+            // Instantiate a lavaBall only if it hasn't been already
             foreach (Vector2 position in instantiationPoints)
             {
                 GameObject lavaBall = Instantiate(lavaBallPrefab, position, Quaternion.identity);
-                /*StartCoroutine(DestroyIceBall(arrow));*/
             }
-        }
-    }
-}
 
-    /*
-    private IEnumerator DestroyIceBall(GameObject arrow)
-    {
-        yield return new WaitForSeconds(arrowLifetime);
-        if (arrow != null)
-        {
-            Destroy(arrow);
+            lavaBallInstantiated = true; // Set the flag to true to prevent further instantiation
+            StartCoroutine(WaitAndResetLavaBallInstantiation());
         }
     }
+
+    private IEnumerator WaitAndResetLavaBallInstantiation()
+    {
+        yield return new WaitForSeconds(2f); // Adjust the duration based on your lava ball's behavior
+        lavaBallInstantiated = false; // Allow the next lava ball to be instantiated after a delay
+    }
 }
-    */
