@@ -35,6 +35,8 @@ public class Player : MonoBehaviour
 
     public Enemy enemy;
 
+    public HealthBar healthBar;
+
     private void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
@@ -49,6 +51,7 @@ public class Player : MonoBehaviour
     {
         currentHealth = maxHealth;
         respawnPoint = transform.position;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
 
@@ -157,13 +160,6 @@ public class Player : MonoBehaviour
             }
         }
 
-        /*
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            respawnPoint = transform.position;
-        }
-        }*/
-
         else if (collision.tag == "Previous Level")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
@@ -175,6 +171,7 @@ public class Player : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
         anim.SetTrigger("isHit");
 
         if (currentHealth <= 0)
