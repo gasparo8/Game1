@@ -8,16 +8,15 @@ public class Demon_Movement : StateMachineBehaviour
     Transform demonR;
     Transform demonL;
     Rigidbody2D rb;
-   /* Vector2 target;*/
- 
+
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        demonL = GameObject.FindGameObjectWithTag("Demon Left Point").transform;
-        demonR = GameObject.FindGameObjectWithTag("Demon Right Point").transform;
+        demonL = GameObject.FindGameObjectWithTag("DemonL").transform;
+        demonR = GameObject.FindGameObjectWithTag("DemonR").transform;
         rb = animator.GetComponent<Rigidbody2D>();
-        /*target = demonR.position;*/
+
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -28,6 +27,7 @@ public class Demon_Movement : StateMachineBehaviour
 
         Vector2 newPos = Vector2.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
         rb.MovePosition(newPos);
+ 
 
         /*
         if (newPos.x > demonR.position.x)
