@@ -750,7 +750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iceBallPrefab: {fileID: 7683165706457252786, guid: 226e8fd697c1b4110b366b0af9bbda6f, type: 3}
-  iceBallLifetime: 10
+  iceBallLifetime: 3.5
   instantiationPoints:
   - {x: 11, y: -1.5}
 --- !u!1 &307513228
