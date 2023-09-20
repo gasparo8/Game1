@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IdleBehavior : StateMachineBehaviour
+
+public class ArrowRain : StateMachineBehaviour
 {
     public GameObject arrowPrefab;
-    public float spawnInterval = 5f;
+    public float spawnInterval = .5f;
     public Vector2 spawnRange = new Vector2(-10, 10);
 
     private float timer = 0f;
