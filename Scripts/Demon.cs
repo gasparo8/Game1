@@ -9,6 +9,8 @@ public class Demon : MonoBehaviour
     private Rigidbody2D rb;
     public Animator animator;
 
+    [SerializeField] private EnemyFlash flashEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,5 +29,10 @@ public class Demon : MonoBehaviour
     public void TakeDamage(int damage)
      {
         currentHealth -= damage;
-     }
+
+        {
+            flashEffect.Flash();
+        }
+
+    }
 }

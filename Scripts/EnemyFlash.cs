@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class EnemyFlash : MonoBehaviour
 {
-
     [SerializeField] private EnemyFlash flashEffect;
-    [SerializeField] private KeyCode flashKey;
+    //[SerializeField] private KeyCode flashKey;
 
     public Demon demon;
 
@@ -26,7 +25,6 @@ public class EnemyFlash : MonoBehaviour
     private Coroutine flashRoutine;
 
 
-
    // Start is called before the first frame update
    void Start()
     {
@@ -36,14 +34,11 @@ public class EnemyFlash : MonoBehaviour
         originalMaterial = spriteRenderer.material;
     }
 
+
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(flashKey))
-        //if (demon.TakeDamage)
-        {
-            flashEffect.Flash();
-        }
+
     }
     
 
@@ -60,6 +55,7 @@ public class EnemyFlash : MonoBehaviour
         //Start the Coroutine, and store the reference for it.
         flashRoutine = StartCoroutine(FlashRoutine());
     }
+
 
     private IEnumerator FlashRoutine()
     {
