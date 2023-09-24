@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class Demon : MonoBehaviour
 {
-
     public int maxHealth = 100;
     public int currentHealth;
     private Rigidbody2D rb;
-    private Player player;
     public Animator animator;
 
     // Start is called before the first frame update
@@ -17,11 +15,7 @@ public class Demon : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
-        // Initialize the player variable.
-        if (GameObject.FindWithTag("Player") != null)
-        {
-            player = GameObject.FindWithTag("Player").GetComponent<Player>();
-        }
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -32,7 +26,6 @@ public class Demon : MonoBehaviour
 
     public void TakeDamage(int damage)
      {
-            currentHealth -= damage;
+        currentHealth -= damage;
      }
-
 }

@@ -2907,7 +2907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
-  animator: {fileID: 0}
+  animator: {fileID: 1895586208}
 --- !u!114 &1917334888 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4433244998398290612, guid: edb9ada77c68a4f6cb4b6cc128488860, type: 3}

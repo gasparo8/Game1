@@ -27,16 +27,28 @@ public class PlayerCombat : MonoBehaviour
         animator.SetTrigger("Attack");
 
         // Detect enemies in range of attack. Center Point is attackPoint.position, radius is attackRange, and filters out layers
-        // The Collider2[] hitEnemies stores all enemies hit
+        // The Collider2D[] hitEnemies stores all enemies hit
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
         // Damage enemies
-        foreach (Collider2D enemy in hitEnemies)
+        foreach (Collider2D enemyCollider in hitEnemies)
         {
-           enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+            // Check if the collider's GameObject has an Enemy or Demon component
+            Enemy enemy = enemyCollider.GetComponent<Enemy>();
+            Demon demon = enemyCollider.GetComponent<Demon>();
+
+            if (enemy != null)
+            {
+                // This is a general enemy (not a demon)
+                enemy.TakeDamage(attackDamage);
+            }
+            else if (demon != null)
+            {
+                // This is a demon-specific behavior
+                demon.TakeDamage(attackDamage);
+            }
         }
     }
-    
 
     void OnDrawGizmosSelected()
     {
