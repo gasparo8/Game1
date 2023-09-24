@@ -2738,6 +2738,7 @@ GameObject:
   - component: {fileID: 1895586209}
   - component: {fileID: 1895586211}
   - component: {fileID: 1895586212}
+  - component: {fileID: 1895586213}
   m_Layer: 7
   m_Name: Demon
   m_TagString: Enemy
@@ -2908,6 +2909,22 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   animator: {fileID: 1895586208}
+--- !u!114 &1895586213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895586205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97978b4e13b334d2f96ccbe0e5c940a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashEffect: {fileID: 1895586213}
+  flashKey: 113
+  flashMaterial: {fileID: 2100000, guid: 6e0614e49697e46c19066635c62d6d98, type: 2}
+  duration: 0.15
 --- !u!114 &1917334888 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4433244998398290612, guid: edb9ada77c68a4f6cb4b6cc128488860, type: 3}

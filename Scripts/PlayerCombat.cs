@@ -20,7 +20,6 @@ public class PlayerCombat : MonoBehaviour
         }
     }
 
-
     void Attack()
     {
         // Play an attack animation
