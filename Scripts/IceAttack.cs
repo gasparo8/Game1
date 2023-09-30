@@ -22,7 +22,7 @@ public class IceAttack : StateMachineBehaviour
 
         if (timer >= spawnInterval)
         {
-           timer = 0f;
+            timer = 0f;
 
             Vector3 spawnPosition = new Vector3(15, Random.Range(spawnRange.x, spawnRange.y), 0);
             Instantiate(iceballPrefab, spawnPosition, Quaternion.identity);
@@ -32,7 +32,7 @@ public class IceAttack : StateMachineBehaviour
     //OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-       
+
     }
 
 }
