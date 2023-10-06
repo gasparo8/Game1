@@ -1,0 +1,562 @@
+fileFormatVersion: 2
+guid: 1e363bd227aec4f168b2d9eb176b05bc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Demon Death Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 672
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24abb2d75e8f7419d89ab5b524d0fe0a
+      internalID: 1082892004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demon Death Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 672
+        width: 46
+        height: 43
+      alignment: 9
+      pivot: {x: 0.4904231, y: 0.45902413}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851be0e7c075a489db92443e67501adc
+      internalID: 643165043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demon Death Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 672
+        width: 46
+        height: 42
+      alignment: 9
+      pivot: {x: 0.49042344, y: 0.50000143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d404ca013c2714ca8bfd085d2901c39c
+      internalID: 732103616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demon Death Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 672
+        width: 46
+        height: 42
+      alignment: 9
+      pivot: {x: 0.48802915, y: 0.48951358}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c23350d099b04452a344a32ae5c270b
+      internalID: 876861396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demon Death Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 672
+        width: 46
+        height: 42
+      alignment: 9
+      pivot: {x: 0.49281776, y: 0.4947568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d230937cda684450afee2477bd9ee0a
+      internalID: 1087640659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demon Death Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 672
+        width: 46
+        height: 42
+      alignment: 9
+      pivot: {x: 0.48563552, y: 0.48689052}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2614c1822ab6a4a3da749af6e206162c
+      internalID: -1630796161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demon Death Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 672
+        width: 46
+        height: 43
+      alignment: 9
+      pivot: {x: 0.49281776, y: 0.46670604}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e19734b702c54729877b7ab8010714d
+      internalID: 1394535143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demon Death Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 672
+        width: 46
+        height: 42
+      alignment: 9
+      pivot: {x: 0.4880298, y: 0.48426747}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8f626b1cd314c189ee0481783e98a0
+      internalID: 71222284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demon Death Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 672
+        width: 46
+        height: 42
+      alignment: 9
+      pivot: {x: 0.49042413, y: 0.48689052}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd5fb018bfe242118245d666fdcb421
+      internalID: -138514316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demon Death Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 668
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.49042344, y: 0.526338}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60175e7542d649a98fdd7723e90356d
+      internalID: -772283991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demon Death Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 672
+        width: 46
+        height: 42
+      alignment: 9
+      pivot: {x: 0.49281842, y: 0.48689052}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc84bf3485724e38bc2ddc0a0360e93
+      internalID: 876954045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demon Death Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 672
+        width: 46
+        height: 43
+      alignment: 9
+      pivot: {x: 0.49042413, y: 0.49743935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1554f683160c74b96b08c0baab78e7f7
+      internalID: -631832952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demon Death Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 672
+        width: 49
+        height: 43
+      alignment: 9
+      pivot: {x: 0.50449544, y: 0.47438937}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0acd4c94b234eac8edd875b96976eb
+      internalID: 1969806074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demon Death Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 672
+        width: 56
+        height: 43
+      alignment: 9
+      pivot: {x: 0.474435, y: 0.46158335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a18fef8225b04942b4fe95139bbd8e5
+      internalID: -1446232382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demon Death Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 624
+        width: 49
+        height: 42
+      alignment: 9
+      pivot: {x: 0.45280114, y: 0.48164585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab30319a674eb4875b13e64b5e7c38de
+      internalID: -672672792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demon Death Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 624
+        width: 49
+        height: 42
+      alignment: 9
+      pivot: {x: 0.45954365, y: 0.48688906}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da27e2141f6b4516b3550161a497544
+      internalID: 567013061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demon Death Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 623
+        width: 61
+        height: 43
+      alignment: 9
+      pivot: {x: 0.49819472, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79289bde182ea4077ba5e077516e28e4
+      internalID: 849388932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demon Death Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 616
+        width: 64
+        height: 52
+      alignment: 9
+      pivot: {x: 0.4771037, y: 0.52817947}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9dcb4d354d64a5b94abaa7f245f689
+      internalID: 985140587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demon Death Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 615
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7829d390781d4084aeb8f0631c62567
+      internalID: 1917445998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demon Death Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 619
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b1f95fa7c2448d08e1a5fb9b164958
+      internalID: 28564813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Demon Death Sheet_18: 1969806074
+      Demon Death Sheet_1: 643165043
+      Demon Death Sheet_17: -631832952
+      Demon Death Sheet_10: 71222284
+      Demon Death Sheet_16: -1515325427
+      Demon Death Sheet_14: 876954045
+      Demon Death Sheet_15: 2010586543
+      Demon Death Sheet_8: 1949468054
+      Demon Death Sheet_5: 1087640659
+      Demon Death Sheet_19: -193297876
+      Demon Death Sheet_0: 1082892004
+      Demon Death Sheet_2: 732103616
+      Demon Death Sheet_6: -1630796161
+      Demon Death Sheet_3: 876861396
+      Demon Death Sheet_11: 1491249973
+      Demon Death Sheet_7: -1010545153
+      Demon Death Sheet_13: -772283991
+      Demon Death Sheet_12: -138514316
+      Demon Death Sheet_4: -1789738978
+      Demon Death Sheet_9: 1394535143
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
