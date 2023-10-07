@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class DemonHealth : MonoBehaviour
 {
     public Slider demonSlider;
-
 
     public void SetMaxHealthDemon(int health)
     {
