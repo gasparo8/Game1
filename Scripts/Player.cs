@@ -37,6 +37,8 @@ public class Player : MonoBehaviour
 
     public HealthBar healthBar;
 
+    public CameraShake cameraShake;
+
     private void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
@@ -173,6 +175,7 @@ public class Player : MonoBehaviour
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
         anim.SetTrigger("isHit");
+        StartCoroutine(cameraShake.Shake(.15f, .2f));
 
         if (currentHealth <= 0)
         {
