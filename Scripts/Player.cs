@@ -228,4 +228,3 @@ public class Player : MonoBehaviour
         myBody.constraints = RigidbodyConstraints2D.FreezePositionX;
     }
 }
-      
