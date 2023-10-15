@@ -2425,6 +2425,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2104142153, guid: edb9ada77c68a4f6cb4b6cc128488860, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1287630975}
+    - target: {fileID: 2104142153, guid: edb9ada77c68a4f6cb4b6cc128488860, type: 3}
       propertyPath: attackRange
       value: 0.25
       objectReference: {fileID: 0}
@@ -2432,6 +2436,26 @@ PrefabInstance:
       propertyPath: enemyLayers.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 2104142153, guid: edb9ada77c68a4f6cb4b6cc128488860, type: 3}
+      propertyPath: swordSwingClips.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104142153, guid: edb9ada77c68a4f6cb4b6cc128488860, type: 3}
+      propertyPath: swordSwingClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: a7c4ce65ee5f14aebb6b955cc9aa1eb1, type: 3}
+    - target: {fileID: 2104142153, guid: edb9ada77c68a4f6cb4b6cc128488860, type: 3}
+      propertyPath: swordSwingClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: a9e8dade3529d4148abf163a488d6df9, type: 3}
+    - target: {fileID: 2104142153, guid: edb9ada77c68a4f6cb4b6cc128488860, type: 3}
+      propertyPath: swordSwingClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4e4554a3ce10949f6914ac80f58a8956, type: 3}
+    - target: {fileID: 2104142153, guid: edb9ada77c68a4f6cb4b6cc128488860, type: 3}
+      propertyPath: swordSwingClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: f92a81154b0354d539d148ed8ee0cab5, type: 3}
     - target: {fileID: 261045411253391480, guid: edb9ada77c68a4f6cb4b6cc128488860, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.4

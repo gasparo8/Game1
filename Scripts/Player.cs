@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     private Animator anim;
 
     private string WALK_ANIMATION = "Walk";
-    private bool isGrounded;
+    public bool isGrounded;
     private string GROUND_TAG = "Ground";
 
     public float leftBound = -9.85f;
@@ -39,6 +39,9 @@ public class Player : MonoBehaviour
 
     public CameraShake cameraShake;
 
+    public AudioClip [] playerHitClips;
+    private AudioSource audioSource;
+
     private void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
@@ -54,6 +57,7 @@ public class Player : MonoBehaviour
         currentHealth = maxHealth;
         respawnPoint = transform.position;
         healthBar.SetMaxHealth(maxHealth);
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -176,6 +180,7 @@ public class Player : MonoBehaviour
         healthBar.SetHealth(currentHealth);
         anim.SetTrigger("isHit");
         StartCoroutine(cameraShake.Shake(.15f, .2f));
+        playerHitSound();
 
         if (currentHealth <= 0)
         {
@@ -183,6 +188,18 @@ public class Player : MonoBehaviour
         }
     }
 
+    void playerHitSound()
+    {
+        if (playerHitClips.Length > 0)
+        {
+            // Randomly select one of the player hit clips.
+            int randomIndex = Random.Range(0, playerHitClips.Length);
+
+            // Play the selected player hit clip using the AudioSource
+            audioSource.clip = playerHitClips[randomIndex];
+            audioSource.Play();
+        }
+    }
 
     void Die()
     {
@@ -228,3 +245,5 @@ public class Player : MonoBehaviour
         myBody.constraints = RigidbodyConstraints2D.FreezePositionX;
     }
 }
+
+/* https://tinyurl.com/ykc3gb4p Song 1*/
