@@ -2380,6 +2380,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8265385081978684921, guid: edb9ada77c68a4f6cb4b6cc128488860, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2093627135, guid: edb9ada77c68a4f6cb4b6cc128488860, type: 3}
       propertyPath: m_Name
       value: AttackPoint
