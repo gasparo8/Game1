@@ -247,3 +247,5 @@ public class Player : MonoBehaviour
 }
 
 /* https://tinyurl.com/ykc3gb4p Song 1*/
+/* https://tinyurl.com/yw7mddlf Song 2*/
+/* https://tinyurl.com/ylt7r8p6 Song 2 but with addition */
