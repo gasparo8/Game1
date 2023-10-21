@@ -3746,6 +3746,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1839096732}
   - component: {fileID: 1839096731}
+  - component: {fileID: 1839096733}
   m_Layer: 0
   m_Name: Red Door Entrance
   m_TagString: Next Level
@@ -3794,6 +3795,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1839096733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839096730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56fce0b79bd9d47fea89d76f0309b9fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newTrack: {fileID: 8300000, guid: b1cd1cb74d81b4bebab43408e75c184c, type: 3}
 --- !u!1 &2082968568
 GameObject:
   m_ObjectHideFlags: 0

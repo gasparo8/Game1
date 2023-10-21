@@ -5,29 +5,37 @@ public class MusicManager : MonoBehaviour
 {
     private static MusicManager musicManagerInstance;
 
+    public AudioSource backgroundMusic;
 
     void Start()
     {
-        // Check if the current scene is "Game1Level5".
-        if (SceneManager.GetActiveScene().name == "Game1Level5")
-        {
-            // Destroy the MusicManager instance.
-            Destroy(gameObject);
-        }
+        DontDestroyOnLoad(gameObject);
     }
 
-        void Awake()
-        {
-            DontDestroyOnLoad(this);
 
-            if (musicManagerInstance == null)
-            {
-                musicManagerInstance = this;
-            }
+    public void ChangeBGM(AudioClip music)
 
-            else
-            {
-                Destroy(gameObject);
-            }
-        }
+    {
+        backgroundMusic.Stop();
+        backgroundMusic.clip = music;
+        backgroundMusic.Play();
     }
+}
+
+/*
+void Awake()
+{
+    DontDestroyOnLoad(this);
+
+    if (musicManagerInstance == null)
+    {
+        musicManagerInstance = this;
+    }
+
+    else
+    {
+        Destroy(gameObject);
+    }
+}
+}
+*/
