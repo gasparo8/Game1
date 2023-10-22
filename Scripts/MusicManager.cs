@@ -9,6 +9,18 @@ public class MusicManager : MonoBehaviour
 
     void Start()
     {
+        // Check if the MusicManager instance already exists.
+        if (musicManagerInstance != null)
+        {
+            // Destroy the current MusicManager instance.
+            Destroy(gameObject);
+            return;
+        }
+
+        // Set the MusicManager instance.
+        musicManagerInstance = this;
+
+        // Mark the MusicManager instance as DontDestroyOnLoad.
         DontDestroyOnLoad(gameObject);
     }
 
@@ -19,21 +31,3 @@ public class MusicManager : MonoBehaviour
         backgroundMusic.Play();
     }
 }
-
-/*
-void Awake()
-{
-    DontDestroyOnLoad(this);
-
-    if (musicManagerInstance == null)
-    {
-        musicManagerInstance = this;
-    }
-
-    else
-    {
-        Destroy(gameObject);
-    }
-}
-}
-*/
