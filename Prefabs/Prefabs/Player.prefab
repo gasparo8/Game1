@@ -237,6 +237,7 @@ MonoBehaviour:
   jumpForce: 11
   movementX: 0
   myBody: {fileID: 4433244998398290615}
+  isGrounded: 0
   leftBound: -9.85
   rightBound: 13.8
   maxHealth: 100
@@ -250,6 +251,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: de32388a61c824fff88df15679bd5d8e, type: 3}
   - {fileID: 8300000, guid: c7af19d362e2547a9b8be508de2b009a, type: 3}
   - {fileID: 8300000, guid: 91917cd9ee6824bb084d57fd707ceaf8, type: 3}
+  playerFootsteps:
+  - {fileID: 8300000, guid: 5690c001f577140b2bb49c33340790a8, type: 3}
+  - {fileID: 8300000, guid: 0f13bfeecad8b49c290ee7e898c43bde, type: 3}
+  - {fileID: 8300000, guid: 42f2d03e34c9245a39348124a8163abd, type: 3}
+  - {fileID: 8300000, guid: 0c2ab8e8c88ee45b1a124c86ae598348, type: 3}
+  - {fileID: 8300000, guid: a81010f26e2134b97ac3fdf19b87c90e, type: 3}
 --- !u!114 &2104142153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,6 +281,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a9e8dade3529d4148abf163a488d6df9, type: 3}
   - {fileID: 8300000, guid: 4e4554a3ce10949f6914ac80f58a8956, type: 3}
   - {fileID: 8300000, guid: f92a81154b0354d539d148ed8ee0cab5, type: 3}
+  player: {fileID: 0}
 --- !u!82 &-8265385081978684921
 AudioSource:
   m_ObjectHideFlags: 0

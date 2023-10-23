@@ -41,6 +41,8 @@ public class Player : MonoBehaviour
 
     public AudioClip [] playerHitClips;
     private AudioSource audioSource;
+ 
+
 
     private void Awake()
     {
@@ -244,8 +246,9 @@ public class Player : MonoBehaviour
         myBody.gravityScale = 0;
         myBody.constraints = RigidbodyConstraints2D.FreezePositionX;
     }
+
 }
 
-/* https://tinyurl.com/ykc3gb4p Song 1*/
-/* https://tinyurl.com/yw7mddlf Song 2*/
+/* https://tinyurl.com/2x62q2nv Song 1*/
+/* https://tinyurl.com/ymxwcot4 Song 2*/
 /* https://tinyurl.com/ylt7r8p6 Song 2 but with addition */

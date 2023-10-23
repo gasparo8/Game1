@@ -3598,7 +3598,7 @@ GameObject:
   - component: {fileID: 1577664652}
   m_Layer: 0
   m_Name: Entry Portal
-  m_TagString: Previous Level
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3613,10 +3613,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.48739004, y: 0.18277144}
+  m_Offset: {x: -0.6134963, y: -0.01395458}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3627,7 +3627,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.26891422, y: 1.3655429}
+  m_Size: {x: 0.52112675, y: 1.7589949}
   m_EdgeRadius: 0
 --- !u!4 &1577664653
 Transform:
@@ -3637,7 +3637,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577664651}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.5, y: -1.37, z: -0.25525823}
+  m_LocalPosition: {x: -9.6, y: -1.37, z: -0.25525823}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4220,6 +4220,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3131303292064449748, guid: 8bda78c0ebc244f9bb277c3210871d4d, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b54abc1e7c29a42b3831a23985724f2e, type: 3}
     - target: {fileID: 5686850546671556852, guid: 8bda78c0ebc244f9bb277c3210871d4d, type: 3}
       propertyPath: m_Name
       value: LavaBall
@@ -4272,5 +4276,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 2.29
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3131303292064449748, guid: 8bda78c0ebc244f9bb277c3210871d4d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8bda78c0ebc244f9bb277c3210871d4d, type: 3}

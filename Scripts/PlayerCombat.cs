@@ -13,6 +13,7 @@ public class PlayerCombat : MonoBehaviour
 
     public AudioClip[] swordSwingClips;
     private AudioSource audioSource;
+ 
     public Player player;
 
     private void Start()
