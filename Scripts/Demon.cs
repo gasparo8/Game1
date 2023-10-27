@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class Demon : MonoBehaviour
@@ -14,6 +15,9 @@ public class Demon : MonoBehaviour
 
     [SerializeField] private EnemyFlash flashEffect;
 
+
+    public Animator transition;
+    public float transitionTime = 12f;
 
     // Start is called before the first frame update
     void Start()
@@ -62,6 +66,8 @@ public class Demon : MonoBehaviour
             animator.SetBool("IceAttack", false);
             animator.SetBool("ComboAttack", false);
             animator.SetBool("Death", true);
+
+            LoadNextLevel();
         }
     }
 
@@ -75,6 +81,23 @@ public class Demon : MonoBehaviour
             flashEffect.Flash();
         }
     }
+
+
+    public void LoadNextLevel()
+    {
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+    }
+
+    IEnumerator LoadLevel(int levelIndex)
+    {
+        yield return new WaitForSeconds(transitionTime);
+
+        transition.SetTrigger("fade");
+
+        SceneManager.LoadScene(levelIndex);
+    }
+
+
 }
 
 /* https://tinyurl.com/ytunnoqw */
