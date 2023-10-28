@@ -6,7 +6,6 @@ public class MusicManager : MonoBehaviour
     private static MusicManager musicManagerInstance;
     public AudioSource backgroundMusic;
 
-
     void Start()
     {
         // Check if the MusicManager instance already exists.
