@@ -17,7 +17,8 @@ public class Demon : MonoBehaviour
 
 
     public Animator transition;
-    public float transitionTime = 12f;
+    public float transitionTime = 10f;
+    public float transitionTime1 = 4f;
 
     // Start is called before the first frame update
     void Start()
@@ -90,14 +91,16 @@ public class Demon : MonoBehaviour
 
     IEnumerator LoadLevel(int levelIndex)
     {
-        yield return new WaitForSeconds(transitionTime);
+       yield return new WaitUntil(() => animator.GetBool("Death"));
+
+       yield return new WaitForSeconds(transitionTime);
 
         transition.SetTrigger("fade");
 
+        yield return new WaitForSeconds(transitionTime1);
+
         SceneManager.LoadScene(levelIndex);
     }
-
-
 }
 
 /* https://tinyurl.com/ytunnoqw */

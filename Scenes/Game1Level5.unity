@@ -3454,7 +3454,8 @@ MonoBehaviour:
   demonhealthBar: {fileID: 1895586214}
   flashEffect: {fileID: 1895586213}
   transition: {fileID: 1329024607}
-  transitionTime: 13
+  transitionTime: 9
+  transitionTime1: 5
 --- !u!114 &1895586213
 MonoBehaviour:
   m_ObjectHideFlags: 0
