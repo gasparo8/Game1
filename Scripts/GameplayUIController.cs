@@ -18,7 +18,6 @@ public class GameplayUIController : MonoBehaviour
     }
 
 
-
     public void OnHomeButtonClicked()
     {
         // Find the current MusicManager instance
